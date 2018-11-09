@@ -11,6 +11,7 @@ const request = require("request-promise");
 const fs = require("fs");
 const readline = require("readline");
 const xml2js = require("xml2js");
+const colors = require("colors");
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -107,7 +108,14 @@ function scrapeLink(products, keywords, site) {
             let atc = "https://" + site + ".com/cart/" + variantId + ":1";
 
             console.log(
-              "NAME: " + title + " | " + "SIZE: " + size + " | " + "ATC: " + atc
+              "NAME: ".green +
+                title +
+                " | " +
+                "SIZE: ".red +
+                size +
+                " | " +
+                "ATC: ".cyan +
+                atc
             );
           });
         })
