@@ -4,6 +4,7 @@
   "description": "Shopify Scraper - Using keyword to scrape any matching items from any Shopify Site.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

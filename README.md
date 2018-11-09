@@ -6,4 +6,4 @@ You are able to scrape any Shopify Sites, and get the ATC Cart Link. Simply ente
 
 - NPM install
 - cd shopify-keyword
-- To run enter node index.js
+- To run enter npm start!
